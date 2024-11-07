@@ -8,6 +8,7 @@ hr {
     border: 0;
     border-top: 1px solid black;
     opacity: .1;
+    margin: 20px 0;
 }
 
 .header-content {
@@ -177,26 +178,128 @@ hr {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.feature-1 {
-    background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
-    color: rgb(9, 30, 66);
+.feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
     padding-top: 80px;
 }
 
+.feature-1 {
+    background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
+    color: rgb(9, 30, 66);
+}
+
 .feature-1-text {
-    font-size: larger;
-    margin-left: 400px;
-    margin-right: 100px;
-    width: fit-content;
+    display: flex;
+    padding-left: 350px;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content:center;
+    width: 470px;
 }
-.feature-1-text h2{
-    font-size: 40px;
-    
+.feature-1-text h2, .feature-2-text h2, .feature-3-text h2, .feature-4-text h2{
+    font-size: 38px;
 }
-.feature-1-text p{
+.feature-1-text p, .feature-2-text p, .feature-3-text p, .feature-4-text p{
     margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 27px;
 }
+
+.feature-2-text{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content:center;
+    width: 470px;
+    padding-left: 80px;
+}
+
+
+
+.feature-2-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.feature-3-text {
+    display: flex;
+    padding-left: 350px;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content:center;
+    width: 470px;
+}
+
+.feature-3-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 70px;
+}
+
+.feature-4-text{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content:center;
+    width: 470px;
+    padding-left: 80px;
+}
+
+
+
+.feature-4-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 59px;
+}
+
+.signup-container {
+    background: linear-gradient(90deg, rgb(64, 50, 148), rgb(76, 154, 255)) no-repeat;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-text h3{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.signup-email input{
+    padding:12px;
+    border-radius: 5px;
+    width: 376px;
+    border: 1px solid rgb(223, 225, 230);
+    max-width: 376px;
+}
+
+.signup-email button{
+    text-align: center;
+    padding: 12px 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(151, 160, 175);
+    color: rgb(23, 43, 77);
+    border-radius: 5px;
+}
+.signup-email button:hover{
+    cursor: pointer;
+}
+
+
+
