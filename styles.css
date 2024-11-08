@@ -287,6 +287,8 @@ hr {
     width: 376px;
     border: 1px solid rgb(223, 225, 230);
     max-width: 376px;
+    margin-right: 5px;
+    font-size: 15px;
 }
 
 .signup-email button{
@@ -296,10 +298,159 @@ hr {
     border: 1px solid rgb(151, 160, 175);
     color: rgb(23, 43, 77);
     border-radius: 5px;
+    margin-left: 5px;
+    font-size: 15px;
 }
 .signup-email button:hover{
     cursor: pointer;
 }
 
+.icon-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text h3{
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
+
+.icon-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-container {
+    background-color: rgb(23, 43, 77);
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+   
+}
+
+.footer-about-container {
+    display: grid;
+    grid-template-columns: repeat(5, 230px);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.about-logo a{
+    color: white;
+    margin-top: 2px;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.about-logo a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.about {
+    padding: 16px;
+    height: 80px;
+}
+.about:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(236, 236, 236, 0.164);
+}
+
+.about h4{
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.about p{
+    font-weight: 200;
+    font-size: 12px;
+    padding: 10px;
+    padding-top: 8px;
+    
+}
+
+.footer-hr {
+    background-color: white;    
+    height: 1.5px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policy-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 85px;
+}
+
+.policy-container img{
+    filter: invert(1);
+}
+
+.policy-container select{
+    background-color: rgb(23, 43, 77);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+}
+
+.policy-container a,.policy-container p{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px 10px 10px;
+    font-size: 12px;
+}
+.policy-container a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 300px;
+
+}
+.links-container img {
+    filter: invert(1);
+    width: 25px;
+    padding: 0 15px 15px 15px;
+}
+.links-container a {
+    transition: 0.5s;
+}
+.links-container a:hover {
+    cursor: pointer;
+    transform: translate(-1px,-1px);
+    transition: 0.5s;
+}
